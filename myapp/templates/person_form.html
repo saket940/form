@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Person Form</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color:rgb(244, 244, 249); padding: 20px; margin: 0;">
+    <h1 style="text-align: center; color:rgb(76, 175, 79);">Person Form</h1>
+    <form method="post" style="max-width: 600px; margin: auto; background:rgb(255, 255, 255); padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" style="background-color:rgb(76, 175, 79); color: white; border: none; padding: 10px 20px; cursor: pointer; font-size: 16px; border-radius: 5px;">
+            Submit
+        </button>
+    </form>
+</body>
+</html>
